@@ -5,11 +5,6 @@ body {
   background-color: #ffffff;
 }
 
-/* Приховуємо скрол, коли відкрите модальне вікно або меню */
-body.modal-open {
-  overflow: hidden;
-}
-
 h1,
 h2,
 h3,
