@@ -108,6 +108,11 @@ a {
   cursor: pointer;
 }
 
+/* === FIX: Додано колір для іконки бургера === */
+.menu-open-icon {
+  stroke: #2e2f42;
+}
+
 /* ================== MOBILE MENU (C1-C6) ================== */
 .mobile-menu {
   position: fixed;
