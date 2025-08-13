@@ -108,7 +108,7 @@ a {
   cursor: pointer;
 }
 
-/* === FIX: Змінено stroke на fill для іконки бургера === */
+/* === FIX: Додано колір для іконки бургера === */
 .menu-open-icon {
   fill: #2e2f42;
 }
