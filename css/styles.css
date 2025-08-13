@@ -108,9 +108,9 @@ a {
   cursor: pointer;
 }
 
-/* === FIX: Додано колір для іконки бургера === */
+/* === FIX: Змінено stroke на fill для іконки бургера === */
 .menu-open-icon {
-  stroke: #2e2f42;
+  fill: #2e2f42;
 }
 
 /* ================== MOBILE MENU (C1-C6) ================== */
@@ -236,26 +236,15 @@ a {
   margin-right: auto;
   padding: 72px 0;
   text-align: center;
-  /* B3, B4: Респонсивні фонові зображення */
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/hero-bg-mob.jpg");
+    url("../images/img-people.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
-/* @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .effective-solutions {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/hero-bg-mob@2x.jpg");
-  }
-} */
 
 .effective-solutions-text {
   max-width: 216px;
@@ -870,17 +859,8 @@ input:checked + .checkbox-label .custom-checkbox {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-bg-tab.jpg");
+      url("../images/img-people.jpg");
   }
-  /* @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .effective-solutions {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url("../images/hero-bg-tab@2x.jpg");
-    }
-  } */
 
   .effective-solutions-text {
     max-width: 496px;
@@ -1006,17 +986,8 @@ input:checked + .checkbox-label .custom-checkbox {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-bg-desk.jpg");
+      url("../images/img-people.jpg");
   }
-  /* @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .effective-solutions {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url("../images/hero-bg-desk@2x.jpg");
-    }
-  } */
 
   .effective-solutions-text {
     margin-bottom: 48px;
