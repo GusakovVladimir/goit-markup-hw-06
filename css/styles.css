@@ -70,7 +70,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
 }
 
 .header-nav {
@@ -86,6 +85,8 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 
 .logo-part-one {
@@ -122,9 +123,8 @@ a {
   height: 100%; /* C4: Займає весь в'юпорт по висоті */
   background-color: #ffffff;
   z-index: 999;
-  display: flex;
   flex-direction: column;
-  padding: 72px 16px 40px;
+
   /* C5: Спочатку меню приховано */
   opacity: 0;
   visibility: hidden;
@@ -142,6 +142,7 @@ a {
 
 .mobile-menu-container {
   display: flex;
+  padding: 72px 16px 40px;
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
@@ -205,13 +206,12 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
 }
 
 .mobile-contacts-link {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
@@ -226,12 +226,13 @@ a {
 .mobile-social-list {
   display: flex;
   justify-content: flex-start;
-  gap: 24px;
+  gap: 40px;
+  margin-top: 48px;
 }
 
 /* ================== HERO SECTION ================== */
 .effective-solutions {
-  max-width: 1440px;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
   padding: 72px 0;
@@ -240,10 +241,27 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/img-people.jpg");
+    url("../images/heroimages/hero-image-mob.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media (min-resolution: 2dppx) {
+  .effective-solutions {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 72px 0;
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/heroimages/hero-image-mob@2x.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .effective-solutions-text {
@@ -300,6 +318,7 @@ a {
   line-height: 1.11;
   font-weight: 700;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .benefits-text {
@@ -735,7 +754,7 @@ a {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: block;
+  display: flex;
 }
 
 .custom-checkbox {
@@ -762,6 +781,7 @@ input:checked + .checkbox-label .custom-checkbox {
 .privacy-link {
   color: #4d5ae5;
   text-decoration: underline;
+  flex-shrink: 0;
 }
 
 .modal-send-btn {
@@ -783,6 +803,9 @@ input:checked + .checkbox-label .custom-checkbox {
   }
 
   .menu-open-btn {
+    display: none;
+  }
+  .mobile-menu-container {
     display: none;
   }
 
@@ -854,14 +877,25 @@ input:checked + .checkbox-label .custom-checkbox {
 
   /* HERO */
   .effective-solutions {
+    max-width: 768px;
     padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/img-people.jpg");
+      url("../images/heroimages/hero-image-tab.jpg");
   }
-
+  @media (min-resolution: 2dppx) {
+    .effective-solutions {
+      max-width: 768px;
+      padding: 112px 0;
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/heroimages/hero-image-tab@2x.jpg");
+    }
+  }
   .effective-solutions-text {
     max-width: 496px;
     font-size: 56px;
@@ -966,6 +1000,9 @@ input:checked + .checkbox-label .custom-checkbox {
   .header-nav .logo {
     margin-right: 76px;
   }
+  .mobile-menu-container {
+    display: none;
+  }
 
   .contacts-list {
     flex-direction: row;
@@ -981,14 +1018,26 @@ input:checked + .checkbox-label .custom-checkbox {
 
   /* HERO */
   .effective-solutions {
+    max-width: 1440px;
     padding: 188px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/img-people.jpg");
+      url("../images/heroimages/hero-image-pc.jpg");
   }
 
+  @media (min-resolution: 2dppx) {
+    .effective-solutions {
+      max-width: 1440px;
+      padding: 188px 0;
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/heroimages/hero-image-pc@2x.jpg");
+    }
+  }
   .effective-solutions-text {
     margin-bottom: 48px;
   }
