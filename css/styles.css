@@ -85,8 +85,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  padding-bottom: 16px;
-  padding-top: 16px;
+  padding: 0;
 }
 
 .logo-part-one {
@@ -809,6 +808,9 @@ input:checked + .checkbox-label .custom-checkbox {
     display: none;
   }
 
+  .mobile-menu {
+    display: none;
+  }
   .nav-list,
   .contacts {
     display: flex;
@@ -988,7 +990,7 @@ input:checked + .checkbox-label .custom-checkbox {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding: 0 15px;
+    padding: 0;
   }
 
   .section {
@@ -1096,8 +1098,8 @@ input:checked + .checkbox-label .custom-checkbox {
 
   .footer-container {
     flex-wrap: nowrap;
-    padding-left: 15px;
     gap: 0;
+    margin-left: 156px;
   }
 
   .footer-logo-wrap {
@@ -1106,5 +1108,6 @@ input:checked + .checkbox-label .custom-checkbox {
 
   .footer-subscribe-wrap {
     margin-left: 80px;
+    margin-right: 159px;
   }
 }
